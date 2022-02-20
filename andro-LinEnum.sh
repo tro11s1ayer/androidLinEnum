@@ -1,39 +1,5 @@
 #!/bin/bash
 #A script to enumerate local information from a Linux host
-version="version 0.982"
-#@rebootuser
-
-#help function
-usage () 
-{ 
-echo -e "\n\e[00;31m#########################################################\e[00m" 
-echo -e "\e[00;31m#\e[00m" "\e[00;33mLocal Linux Enumeration & Privilege Escalation Script\e[00m" "\e[00;31m#\e[00m"
-echo -e "\e[00;31m#########################################################\e[00m"
-echo -e "\e[00;33m# www.rebootuser.com | @rebootuser \e[00m"
-echo -e "\e[00;33m# $version\e[00m\n"
-echo -e "\e[00;33m# Example: ./LinEnum.sh -k keyword -r report -e /tmp/ -t \e[00m\n"
-
-		echo "OPTIONS:"
-		echo "-k	Enter keyword"
-		echo "-e	Enter export location"
-		echo "-s 	Supply user password for sudo checks (INSECURE)"
-		echo "-t	Include thorough (lengthy) tests"
-		echo "-r	Enter report name" 
-		echo "-h	Displays this help text"
-		echo -e "\n"
-		echo "Running with no options = limited scans/no output file"
-		
-echo -e "\e[00;31m#########################################################\e[00m"		
-}
-header()
-{
-echo -e "\n\e[00;31m#########################################################\e[00m" 
-echo -e "\e[00;31m#\e[00m" "\e[00;33mLocal Linux Enumeration & Privilege Escalation Script\e[00m" "\e[00;31m#\e[00m" 
-echo -e "\e[00;31m#########################################################\e[00m" 
-echo -e "\e[00;33m# www.rebootuser.com\e[00m" 
-echo -e "\e[00;33m# $version\e[00m\n" 
-
-}
 
 debug_info()
 {
